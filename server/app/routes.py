@@ -57,7 +57,7 @@ def movies():
     else:
         try:
             search = tmdb.Search()
-            response = search.movie(query=request["movieName"])
+            response = search.movie(query=request.args["movieName"])
             titles = [{"id":m['id'], "label":m['title'] } for m in response["results"]]
             res = {"titles":titles}
         except Exception as e:
