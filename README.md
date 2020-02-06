@@ -45,7 +45,13 @@ Then, install the dependencies with the following command:
 pip install -r requirements.txt
 ```
 
-Now that the environment is set up, you can run your backend Flask server with the following:
+Now that the environment is set up, you'll need to enter your own info from TMDB. Sign up for an account there and get an API key. Paste it into the top of ./server/app/routes.py where it says
+
+```
+tmdb.API_KEY = 'API_KEY_HERE'
+```
+
+Finally, you can run your backend Flask server with the following:
 
 ```
 python main.py
