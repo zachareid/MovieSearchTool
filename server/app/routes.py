@@ -23,11 +23,11 @@ def movie():
             "runtime": "",
             "imgfile": ""
             }
-    if request.args.get("movieId") == "":
+    if request.args["movieId"] == "":
         return jsonify(res)
     else:
         try:
-            movie = tmdb.Movies(int(request.args.get("movieId")))
+            movie = tmdb.Movies(int(request.args["movieId"]))
             info = movie.info()
             res = { "title":info["title"],
                     "summary": info["overview"],
@@ -52,12 +52,12 @@ def movies():
                         Accessing ["titles"] contains an array of string suggestions
     """
     res = {"titles":[]}
-    if request.args.get("movieName") == "":
+    if request.args["movieName"] == "":
         return jsonify(res)
     else:
         try:
             search = tmdb.Search()
-            response = search.movie(query=request.args("movieName"))
+            response = search.movie(query=request["movieName"])
             titles = [{"id":m['id'], "label":m['title'] } for m in response["results"]]
             res = {"titles":titles}
         except Exception as e:
