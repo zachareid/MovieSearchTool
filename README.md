@@ -1,10 +1,19 @@
 # Description
-This is a tool that allows you to retrieve information about movies using data from TMDB. It was built with React and Flask.
+This is a tool that allows you to retrieve information about movies using data from TMDB. It was built with React and Flask. It implements an Autocomplete component that retrieves data for you to preview.
+
+# Live Deployment
+This application can be seen live at the github-pages associated with this repo. 
+
+https://zachareid.github.io/MovieSearchTool/
+
+The autocomplete results may take a second to first load, as it's hosted on a free Heroku account, which has that quality :^)
 
 # Local Deployment
 First, clone this repository.
 
-```git clone https://github.com/zachareid/MovieSearchTool.git```
+```
+git clone https://github.com/zachareid/MovieSearchTool.git
+```
 
 Then, you'll need to install the dependencies for React and the Flask server.
 
