@@ -2,8 +2,7 @@ from flask import jsonify, request
 from app import app
 import tmdbsimple as tmdb
 
-tmdb.API_KEY = 'db0ddff1b1f2707c30756b231cbc35f5'
-
+tmdb.API_KEY = 'API_KEY_HERE'
 
 @app.route('/getMovie')
 def movie():
