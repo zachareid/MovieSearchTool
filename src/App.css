@@ -18,9 +18,15 @@ body {
   text-align: center;
 }
 
+
+.poster {
+  text-align: center;
+}
+
 .movie-subtext {
   text-align: center;
 }
+
 
 .summary-header {
   font-size: calc(20px + 2vmin);
@@ -34,10 +40,23 @@ body {
 
 .autocomplete {
   text-align: center;
+  margin-top: 20px;
+}
+.autocomplete-header {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .autocomplete input {
-  width: 200px;
+  width: 600px;
   height: 30px;
-  font-size:30px;
+  font-size:20px;
+  border-radius: 10px;
+}
+
+.item {
+  font-size: 16px;
+  text-align: left;
+  height: 25px;
 }
